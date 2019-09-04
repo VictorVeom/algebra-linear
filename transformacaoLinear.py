@@ -38,12 +38,12 @@ def dilatacaoXeY():
     matriz = entrar()
     uni = float(input("Quantas unidades para X e Y? Exemplo: 1 ou -1"))
     for i in range(len(matriz)):
-        result = matriz[i][1] + uni
+        result = matriz[i][1] * uni
         matriz[i].pop()
         matriz[i].append(result)
 
     for i in range(len(matriz)):
-        resultX = matriz[i][0] + uni
+        resultX = matriz[i][0] * uni
         y = matriz[i].pop() #y
         matriz[i].pop() #x
         matriz[i].append(resultX)
